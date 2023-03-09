@@ -1,0 +1,34 @@
+@import "../../mixins.scss";
+.movieCard {
+  width: calc(50% - 5px);
+  margin-bottom: 25px;
+  cursor: pointer;
+  flex-shrink: 0;
+  @include md {
+    width: calc(25% - 15px);
+  }
+  @include lg {
+    width: calc(20% - 16px);
+  }
+  .textBlock {
+    color: white;
+    .title {
+      font-size: 16px;
+      margin-bottom: 10px;
+      line-height: 24px;
+      @include ellipsis(1);
+      @include md {
+        font-size: 20px;
+      }
+    }
+    .posterBlock {
+      .posterImg {
+        display: flex;
+        position: relative;
+        Img {
+          width: 50%;
+        }
+      }
+    }
+  }
+}

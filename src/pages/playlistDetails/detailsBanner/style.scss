@@ -1,0 +1,23 @@
+.songTitle {
+  display: flex;
+  color: white;
+  line-height: 40px;
+  flex-direction: column;
+  span {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .date{
+    position: relative;
+    left: 20px;
+  }
+  .artist{
+    color: red;
+    position: relative;
+    float: right;
+  }
+
+  Img {
+    width: 70px;
+  }
+}
